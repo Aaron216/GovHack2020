@@ -63,7 +63,7 @@ for mapLayer in mapLayers:
         show = True
     ),
     for point in mapLayer['points']:
-        
+        point.add_to(featureGroup)
     for area in mapLayer['area']:
         point.add_to(featureGroup)
     featureGroup.add_to(mapData)
