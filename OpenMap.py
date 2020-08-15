@@ -10,63 +10,53 @@ mapData = folium.Map(
     title = 'Open Map'
 )
 
-mapLayers = [
-    {
-        'name': 'Fire',
-        'points': [
-            folium.Marker(
-                location = [-35.30818, 149.12445],
-                popup = 'Fire',
-                icon = folium.Icon(
-                    icon = 'fire',
-                    color = 'red')
-            )
-        ],
-        'areas': [
-            folium.Circle(
-                radius = 1000,
-                location = [-35.30818, 149.12445],
-                popup = 'Fire',
-                color = 'crimson',
-                fill = True,
-                fill_color = 'crimson'
-            )
-        ]
-    },
-    {
-        'name': 'Traffic',
-        'points': [
-            folium.Marker(
-                location = [-35.29276, 149.12694],
-                popup = 'Bridge Closed',
-                icon = folium.Icon(
-                    icon = 'warning-sign',
-                    color = 'red')
-            ),
-            folium.Marker(
-                location = [-35.30170, 149.14110],
-                popup = 'Bridge Closed',
-                icon = folium.Icon(
-                    icon = 'warning-sign',
-                    color = 'red')
-            )
-        ],
-        'areas': []
-    }
-]
+fireData = folium.FeatureGroup(
+    name='Fire'
+)
+fireData.add_child(
+    folium.Marker(
+        location = [-35.30818, 149.12445],
+        popup = 'Fire',
+        icon = folium.Icon(
+            icon = 'fire',
+            color = 'red')
+    )
+)
+fireData.add_child(
+    folium.Circle(
+        radius = 1000,
+        location = [-35.30818, 149.12445],
+        popup = 'Fire',
+        color = 'crimson',
+        fill = True,
+        fill_color = 'crimson'
+    )
+)
 
-for mapLayer in mapLayers:
-    featureGroup = folium.map.FeatureGroup(
-        name = mapLayer['name'],
-        overlay = True,
-        control = True,
-        show = True
-    ),
-    for point in mapLayer['points']:
-        point.add_to(featureGroup)
-    for area in mapLayer['area']:
-        point.add_to(featureGroup)
-    featureGroup.add_to(mapData)
+trafficData = folium.FeatureGroup(
+    name='Trafic'
+)
+trafficData.add_child(
+    folium.Marker(
+        location = [-35.29276, 149.12694],
+        popup = 'Bridge Closed',
+        icon = folium.Icon(
+            icon = 'warning-sign',
+            color = 'orange')
+    )
+)
+trafficData.add_child(
+    folium.Marker(
+        location = [-35.30170, 149.14110],
+        popup = 'Bridge Closed',
+        icon = folium.Icon(
+            icon = 'warning-sign',
+            color = 'orange')
+    )
+)
+
+mapData.add_child(fireData)
+mapData.add_child(trafficData)
 
 folium.LayerControl().add_to(mapData)
 
