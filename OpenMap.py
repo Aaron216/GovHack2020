@@ -40,12 +40,12 @@ fireData.add_child(
         fill_color = 'crimson'
     )
 )
+mapData.add_child(fireData)
 
 # Add ACT traffic data
 trafficData = folium.FeatureGroup(
     name='Trafic'
 )
-
 response = requests.get('https://services1.arcgis.com/E5n4f1VY84i0xSjy/arcgis/rest/services/Public_Temporary_Road_Closures/FeatureServer/0/query?&where=objectid%3E0&outFields=*&f=json')
 if response.status_code != 200:
     print('Error getting ACT Road Closure Data')
@@ -69,11 +69,7 @@ for item in response.json()['features']:
             )
         )
     )
-
-
-mapData.add_child(fireData)
 mapData.add_child(trafficData)
 
 folium.LayerControl().add_to(mapData)
-
 mapData.save('index.html')
