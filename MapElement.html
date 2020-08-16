@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cd02375bc158421a9d947a5b35005ae8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_cd02375bc158421a9d947a5b35005ae8" ></div>
+        
+</body>
+<script>    
+    
+            var map_cd02375bc158421a9d947a5b35005ae8 = L.map(
+                "map_cd02375bc158421a9d947a5b35005ae8",
+                {
+                    center: [-35.293056, 149.126944],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                    title: "Open Map",
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6b6b7ee8256d45cebce32ec2be6b4efa = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_cd02375bc158421a9d947a5b35005ae8);
+        
+    
+            var feature_group_347fe4c072d844ea825c06e2feefc4bd = L.featureGroup(
+                {}
+            ).addTo(map_cd02375bc158421a9d947a5b35005ae8);
+        
+    
+            var marker_d311942255164065a15d5ed8bb640f0f = L.marker(
+                [-35.30818, 149.12445],
+                {}
+            ).addTo(feature_group_347fe4c072d844ea825c06e2feefc4bd);
+        
+    
+            var icon_f6bdf59a18764630b5b0814200ceb251 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "fire", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d311942255164065a15d5ed8bb640f0f.setIcon(icon_f6bdf59a18764630b5b0814200ceb251);
+        
+    
+        var popup_06e9e78f57ca4d19a717c74bb31cd489 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a07260ca9fdd43f4b8dcc6a3f8835ba7 = $(`<div id="html_a07260ca9fdd43f4b8dcc6a3f8835ba7" style="width: 100.0%; height: 100.0%;">Fire</div>`)[0];
+            popup_06e9e78f57ca4d19a717c74bb31cd489.setContent(html_a07260ca9fdd43f4b8dcc6a3f8835ba7);
+        
+
+        marker_d311942255164065a15d5ed8bb640f0f.bindPopup(popup_06e9e78f57ca4d19a717c74bb31cd489)
+        ;
+
+        
+    
+    
+            var circle_92c9a32bcb704b7c9edbbadf6497f77a = L.circle(
+                [-35.30818, 149.12445],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(feature_group_347fe4c072d844ea825c06e2feefc4bd);
+        
+    
+        var popup_708d15429e604dfba3e0c90e6f51e149 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b334731e5283460dacdab391dab84c21 = $(`<div id="html_b334731e5283460dacdab391dab84c21" style="width: 100.0%; height: 100.0%;">Fire</div>`)[0];
+            popup_708d15429e604dfba3e0c90e6f51e149.setContent(html_b334731e5283460dacdab391dab84c21);
+        
+
+        circle_92c9a32bcb704b7c9edbbadf6497f77a.bindPopup(popup_708d15429e604dfba3e0c90e6f51e149)
+        ;
+
+        
+    
+    
+            var feature_group_6b441a3ff9bd49c384cda4d1337b673c = L.featureGroup(
+                {}
+            ).addTo(map_cd02375bc158421a9d947a5b35005ae8);
+        
+    
+            var marker_a2b1967612c24e63a3050eb45ac220c4 = L.marker(
+                [-35.289483795403406, 149.12650292180757],
+                {}
+            ).addTo(feature_group_6b441a3ff9bd49c384cda4d1337b673c);
+        
+    
+            var icon_6c755916ac2d4bdba7b5480518d7d358 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_a2b1967612c24e63a3050eb45ac220c4.setIcon(icon_6c755916ac2d4bdba7b5480518d7d358);
+        
+    
+        var popup_e1caa3ba7e5943509abac29e7ae412cb = L.popup({"maxWidth": 400, "minWidth": 200});
+
+        
+            var html_c4b333ca349749e5887c50023aebfde3 = $(`<div id="html_c4b333ca349749e5887c50023aebfde3" style="width: 100.0%; height: 100.0%;">PUBLIC CAR PARK: The southern car park on the corner of Albert Street and Barrine Drive will be closed</div>`)[0];
+            popup_e1caa3ba7e5943509abac29e7ae412cb.setContent(html_c4b333ca349749e5887c50023aebfde3);
+        
+
+        marker_a2b1967612c24e63a3050eb45ac220c4.bindPopup(popup_e1caa3ba7e5943509abac29e7ae412cb)
+        ;
+
+        
+    
+    
+            var marker_2419a7d695c5496aa4196573efb27c1b = L.marker(
+                [-35.16540388395676, 149.13115547083777],
+                {}
+            ).addTo(feature_group_6b441a3ff9bd49c384cda4d1337b673c);
+        
+    
+            var icon_9407fb95f79d489ab7321ebeff549542 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_2419a7d695c5496aa4196573efb27c1b.setIcon(icon_9407fb95f79d489ab7321ebeff549542);
+        
+    
+        var popup_4cbe7a0e2c9a4279b35438ff7fe9fba8 = L.popup({"maxWidth": 400, "minWidth": 200});
+
+        
+            var html_c79129e59142449ab5b3880c5d7a8edf = $(`<div id="html_c79129e59142449ab5b3880c5d7a8edf" style="width: 100.0%; height: 100.0%;">PIONEER STREET WESTBOUND DIRECTION: From Emerald Way to Balgarup Street.<br> BALGARUP STREET SOUTHBOUND DIRECTION: From Pioneer Street to Aberfoyle Street.<br> ABERFOYLE STREET BOTH DIRECTIONS: From Balgarup Street to the end.<br> 6 am to 7 pm (daily) on periodic days as required Monday to Sunday.<br> from Thursday 7 September 2018 to Monday 31 August 2020.</div>`)[0];
+            popup_4cbe7a0e2c9a4279b35438ff7fe9fba8.setContent(html_c79129e59142449ab5b3880c5d7a8edf);
+        
+
+        marker_2419a7d695c5496aa4196573efb27c1b.bindPopup(popup_4cbe7a0e2c9a4279b35438ff7fe9fba8)
+        ;
+
+        
+    
+    
+            var marker_4af21679e0c04a74ba0b3705a7c75c33 = L.marker(
+                [-35.4114806498115, 149.06419640216723],
+                {}
+            ).addTo(feature_group_6b441a3ff9bd49c384cda4d1337b673c);
+        
+    
+            var icon_b49a70e501e1428f9daad67c42ae203b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_4af21679e0c04a74ba0b3705a7c75c33.setIcon(icon_b49a70e501e1428f9daad67c42ae203b);
+        
+    
+        var popup_c2e51bbd5f244bd3b8ea7cda8038044c = L.popup({"maxWidth": 400, "minWidth": 200});
+
+        
+            var html_4e2b4e9c94114c648ed6380cf164a131 = $(`<div id="html_4e2b4e9c94114c648ed6380cf164a131" style="width: 100.0%; height: 100.0%;">BARTLETT PLACE: adjacent to number 25 Bartlett Place.</div>`)[0];
+            popup_c2e51bbd5f244bd3b8ea7cda8038044c.setContent(html_4e2b4e9c94114c648ed6380cf164a131);
+        
+
+        marker_4af21679e0c04a74ba0b3705a7c75c33.bindPopup(popup_c2e51bbd5f244bd3b8ea7cda8038044c)
+        ;
+
+        
+    
+    
+            var marker_a679275ea3ba4ab28df0f3ea94207c45 = L.marker(
+                [-35.34681367818279, 149.2041723693232],
+                {}
+            ).addTo(feature_group_6b441a3ff9bd49c384cda4d1337b673c);
+        
+    
+            var icon_4efa0f20198b4d959a69a2d670f5ab0a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_a679275ea3ba4ab28df0f3ea94207c45.setIcon(icon_4efa0f20198b4d959a69a2d670f5ab0a);
+        
+    
+        var popup_da40313f9ff54f46aeb6a73fa2af39ca = L.popup({"maxWidth": 400, "minWidth": 200});
+
+        
+            var html_ba464d9d635e4ba3b3552f9796db0953 = $(`<div id="html_ba464d9d635e4ba3b3552f9796db0953" style="width: 100.0%; height: 100.0%;">WOODS LANE: Approximately 1km south from Willmetts Street.</div>`)[0];
+            popup_da40313f9ff54f46aeb6a73fa2af39ca.setContent(html_ba464d9d635e4ba3b3552f9796db0953);
+        
+
+        marker_a679275ea3ba4ab28df0f3ea94207c45.bindPopup(popup_da40313f9ff54f46aeb6a73fa2af39ca)
+        ;
+
+        
+    
+    
+            var marker_b50d5bdbd26b488e964cddb0c372e1bd = L.marker(
+                [-35.23545732274395, 149.077453509941],
+                {}
+            ).addTo(feature_group_6b441a3ff9bd49c384cda4d1337b673c);
+        
+    
+            var icon_1fb3384a512c481f82660219abe91247 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_b50d5bdbd26b488e964cddb0c372e1bd.setIcon(icon_1fb3384a512c481f82660219abe91247);
+        
+    
+        var popup_1d2530259ef74115a9dc9467d13078ad = L.popup({"maxWidth": 400, "minWidth": 200});
+
+        
+            var html_1b1ef521594242079b3ab218136b7970 = $(`<div id="html_1b1ef521594242079b3ab218136b7970" style="width: 100.0%; height: 100.0%;">TOWNSEND PLACE: At the intersection with Aikman Drive.<br> From Monday 7 May 2012 between sunset and sunrise, until further notice.<br> Please note access for emergency and maintenance vehicles will be maintained at all times.</div>`)[0];
+            popup_1d2530259ef74115a9dc9467d13078ad.setContent(html_1b1ef521594242079b3ab218136b7970);
+        
+
+        marker_b50d5bdbd26b488e964cddb0c372e1bd.bindPopup(popup_1d2530259ef74115a9dc9467d13078ad)
+        ;
+
+        
+    
+    
+            var marker_a4e8133a0a4e46f29731ce93a8ec7494 = L.marker(
+                [-35.27301317429034, 149.131141164795],
+                {}
+            ).addTo(feature_group_6b441a3ff9bd49c384cda4d1337b673c);
+        
+    
+            var icon_f21fe3fdd1c9473a92dc969ce09b860b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_a4e8133a0a4e46f29731ce93a8ec7494.setIcon(icon_f21fe3fdd1c9473a92dc969ce09b860b);
+        
+    
+        var popup_67a6dd696d9f4b72b5bb2440f99afc07 = L.popup({"maxWidth": 400, "minWidth": 200});
+
+        
+            var html_f06b39b88ff145cdbb735ec99087888c = $(`<div id="html_f06b39b88ff145cdbb735ec99087888c" style="width: 100.0%; height: 100.0%;">Approximately 35 off street car parking spaces on the western side of Mort Street from the Elouera Street intersection will be affected. The closures of car park spaces will be along a 100 metre section (northbound) of Mort Street.</div>`)[0];
+            popup_67a6dd696d9f4b72b5bb2440f99afc07.setContent(html_f06b39b88ff145cdbb735ec99087888c);
+        
+
+        marker_a4e8133a0a4e46f29731ce93a8ec7494.bindPopup(popup_67a6dd696d9f4b72b5bb2440f99afc07)
+        ;
+
+        
+    
+    
+            var marker_7dee2e10de64404895db8412a1dc52c6 = L.marker(
+                [-35.29854421825134, 149.1595342368915],
+                {}
+            ).addTo(feature_group_6b441a3ff9bd49c384cda4d1337b673c);
+        
+    
+            var icon_2b39f4bbc6114c5cb394b100912a3c18 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_7dee2e10de64404895db8412a1dc52c6.setIcon(icon_2b39f4bbc6114c5cb394b100912a3c18);
+        
+    
+        var popup_bbe34adee68b48f2be8e9491d4162216 = L.popup({"maxWidth": 400, "minWidth": 200});
+
+        
+            var html_93ec1290bd814f4e87b5d5218205cabe = $(`<div id="html_93ec1290bd814f4e87b5d5218205cabe" style="width: 100.0%; height: 100.0%;">GENERAL BRIDGES DR: Just past the entrance to the RMC Obstacle Course.<br> from 7.00pm to 7.00am</div>`)[0];
+            popup_bbe34adee68b48f2be8e9491d4162216.setContent(html_93ec1290bd814f4e87b5d5218205cabe);
+        
+
+        marker_7dee2e10de64404895db8412a1dc52c6.bindPopup(popup_bbe34adee68b48f2be8e9491d4162216)
+        ;
+
+        
+    
+    
+            var marker_7074215ee5a346fcb8cef368225c1f5f = L.marker(
+                [-35.21670657278263, 149.0969525680576],
+                {}
+            ).addTo(feature_group_6b441a3ff9bd49c384cda4d1337b673c);
+        
+    
+            var icon_d2f431fea87a4944b7d4f921802e0740 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_7074215ee5a346fcb8cef368225c1f5f.setIcon(icon_d2f431fea87a4944b7d4f921802e0740);
+        
+    
+        var popup_4fad2535004849fb9d13fe65ac50fb17 = L.popup({"maxWidth": 400, "minWidth": 200});
+
+        
+            var html_c8a71cd37f2a41c5b314461469874439 = $(`<div id="html_c8a71cd37f2a41c5b314461469874439" style="width: 100.0%; height: 100.0%;">COREE PLACE: At the intersection with Tucana Street.<br> From Monday 4 August 2014 between sunset and sunrise, until further notice.</div>`)[0];
+            popup_4fad2535004849fb9d13fe65ac50fb17.setContent(html_c8a71cd37f2a41c5b314461469874439);
+        
+
+        marker_7074215ee5a346fcb8cef368225c1f5f.bindPopup(popup_4fad2535004849fb9d13fe65ac50fb17)
+        ;
+
+        
+    
+    
+            var marker_95e95593084546a99c5a65295b1995c3 = L.marker(
+                [-35.411300152355686, 149.06433555741614],
+                {}
+            ).addTo(feature_group_6b441a3ff9bd49c384cda4d1337b673c);
+        
+    
+            var icon_04a475466efb43c79db5cbf43a1efd7a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_95e95593084546a99c5a65295b1995c3.setIcon(icon_04a475466efb43c79db5cbf43a1efd7a);
+        
+    
+        var popup_c360eda61ede441bb497ebce27b1ccd7 = L.popup({"maxWidth": 400, "minWidth": 200});
+
+        
+            var html_9c63a9bcbe804a6a97f2d41cec528ea6 = $(`<div id="html_9c63a9bcbe804a6a97f2d41cec528ea6" style="width: 100.0%; height: 100.0%;">BARTLET PLACE: Adjacent to the entrance of the Tuggeranong Pool and Recreation Centre.<br> Please note that the access to Tuggeranong Pool and Recreation Centre will not be affected.<br> Between 10.00pm and 7.00am daily.</div>`)[0];
+            popup_c360eda61ede441bb497ebce27b1ccd7.setContent(html_9c63a9bcbe804a6a97f2d41cec528ea6);
+        
+
+        marker_95e95593084546a99c5a65295b1995c3.bindPopup(popup_c360eda61ede441bb497ebce27b1ccd7)
+        ;
+
+        
+    
+    
+            var marker_a9e8821c842f4c659699956957ec6995 = L.marker(
+                [-35.341111831058505, 149.09390073007984],
+                {}
+            ).addTo(feature_group_6b441a3ff9bd49c384cda4d1337b673c);
+        
+    
+            var icon_798d255f64ce453b816b792ad68fa9fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_a9e8821c842f4c659699956957ec6995.setIcon(icon_798d255f64ce453b816b792ad68fa9fb);
+        
+    
+        var popup_183611e85ddf4879a7d27007773a14fa = L.popup({"maxWidth": 400, "minWidth": 200});
+
+        
+            var html_ce1fdce4a566458db0d2ed20fe43d006 = $(`<div id="html_ce1fdce4a566458db0d2ed20fe43d006" style="width: 100.0%; height: 100.0%;">JUSTINIAN STREET Approximately fifty metres from the intersection with Yamba Drive.<br> From dusk to 7.30am.</div>`)[0];
+            popup_183611e85ddf4879a7d27007773a14fa.setContent(html_ce1fdce4a566458db0d2ed20fe43d006);
+        
+
+        marker_a9e8821c842f4c659699956957ec6995.bindPopup(popup_183611e85ddf4879a7d27007773a14fa)
+        ;
+
+        
+    
+    
+            var marker_eb8c0ca168d74cab9cee70e294e808f6 = L.marker(
+                [-35.22256976798865, 149.13493822730908],
+                {}
+            ).addTo(feature_group_6b441a3ff9bd49c384cda4d1337b673c);
+        
+    
+            var icon_3cc9f0c5e0174fe8a563a419e899f353 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_eb8c0ca168d74cab9cee70e294e808f6.setIcon(icon_3cc9f0c5e0174fe8a563a419e899f353);
+        
+    
+        var popup_3a422e50524041d4a439a5b534c9760f = L.popup({"maxWidth": 400, "minWidth": 200});
+
+        
+            var html_072267f93b904cef950039bc6fc7128f = $(`<div id="html_072267f93b904cef950039bc6fc7128f" style="width: 100.0%; height: 100.0%;">BELLENDEN STREET : Approximately two hundred metres west of Hoskins Street.<br> From 8.00am on Wednesday 15 June 2005 until further notice.</div>`)[0];
+            popup_3a422e50524041d4a439a5b534c9760f.setContent(html_072267f93b904cef950039bc6fc7128f);
+        
+
+        marker_eb8c0ca168d74cab9cee70e294e808f6.bindPopup(popup_3a422e50524041d4a439a5b534c9760f)
+        ;
+
+        
+    
+    
+            var marker_47b77f774cab42e99b302aa7c0bba701 = L.marker(
+                [-35.314655879595506, 149.18343552530644],
+                {}
+            ).addTo(feature_group_6b441a3ff9bd49c384cda4d1337b673c);
+        
+    
+            var icon_c1168a5df291465693123add049b5a1c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_47b77f774cab42e99b302aa7c0bba701.setIcon(icon_c1168a5df291465693123add049b5a1c);
+        
+    
+        var popup_a366a5d86bc04666bdef700b3a3beaab = L.popup({"maxWidth": 400, "minWidth": 200});
+
+        
+            var html_ebcdc15e7c8b4371a7234e0c10156511 = $(`<div id="html_ebcdc15e7c8b4371a7234e0c10156511" style="width: 100.0%; height: 100.0%;">KALLAROO ROAD: Part of Kallaroo Road, adjacent to number 23 Kallaroo Road.<br> From 6.00 am Thursday 1 March 2012, until further notice.</div>`)[0];
+            popup_a366a5d86bc04666bdef700b3a3beaab.setContent(html_ebcdc15e7c8b4371a7234e0c10156511);
+        
+
+        marker_47b77f774cab42e99b302aa7c0bba701.bindPopup(popup_a366a5d86bc04666bdef700b3a3beaab)
+        ;
+
+        
+    
+    
+            var marker_6da6765eb1af40e5a3a744d419e31b1c = L.marker(
+                [-35.529930439983985, 149.06555326947046],
+                {}
+            ).addTo(feature_group_6b441a3ff9bd49c384cda4d1337b673c);
+        
+    
+            var icon_b00a161ee8044cc0b04c4725414f3b59 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_6da6765eb1af40e5a3a744d419e31b1c.setIcon(icon_b00a161ee8044cc0b04c4725414f3b59);
+        
+    
+        var popup_03963dfb85ef406095a200f059faa321 = L.popup({"maxWidth": 400, "minWidth": 200});
+
+        
+            var html_de28328576294f39961476952240bf69 = $(`<div id="html_de28328576294f39961476952240bf69" style="width: 100.0%; height: 100.0%;">Naas Road at the Namadgi Visitors Centre<br> More information at www.environment.act.gov.au/parks-conservation/parks-and-reserves/find-a-park/namadgi-national-park/namadgi-national-park</div>`)[0];
+            popup_03963dfb85ef406095a200f059faa321.setContent(html_de28328576294f39961476952240bf69);
+        
+
+        marker_6da6765eb1af40e5a3a744d419e31b1c.bindPopup(popup_03963dfb85ef406095a200f059faa321)
+        ;
+
+        
+    
+    
+            var marker_f9700a60b0c4433ab8196594035b5266 = L.marker(
+                [-35.576810547402694, 149.01663248566553],
+                {}
+            ).addTo(feature_group_6b441a3ff9bd49c384cda4d1337b673c);
+        
+    
+            var icon_23e47c72f69f4ccb9717c01890c70fe4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f9700a60b0c4433ab8196594035b5266.setIcon(icon_23e47c72f69f4ccb9717c01890c70fe4);
+        
+    
+        var popup_54b3b7919fd64ec28808ae6c23f422f1 = L.popup({"maxWidth": 400, "minWidth": 200});
+
+        
+            var html_8a8fef9ba2c544828331e1c326032af2 = $(`<div id="html_8a8fef9ba2c544828331e1c326032af2" style="width: 100.0%; height: 100.0%;">Apollo Road from Namadgi National Park boundary is closed.<br> More information at www.environment.act.gov.au/parks-conservation/parks-and-reserves/find-a-park/namadgi-national-park/namadgi-national-park</div>`)[0];
+            popup_54b3b7919fd64ec28808ae6c23f422f1.setContent(html_8a8fef9ba2c544828331e1c326032af2);
+        
+
+        marker_f9700a60b0c4433ab8196594035b5266.bindPopup(popup_54b3b7919fd64ec28808ae6c23f422f1)
+        ;
+
+        
+    
+    
+            var marker_bcecabb2dcfa4d9d9031bdb4701833e8 = L.marker(
+                [-35.66088522973525, 148.99142143756916],
+                {}
+            ).addTo(feature_group_6b441a3ff9bd49c384cda4d1337b673c);
+        
+    
+            var icon_21be2fc6c6f84e5882d724105bdec7c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_bcecabb2dcfa4d9d9031bdb4701833e8.setIcon(icon_21be2fc6c6f84e5882d724105bdec7c4);
+        
+    
+        var popup_56fd59685a52493d81d8566bf9d24f1a = L.popup({"maxWidth": 400, "minWidth": 200});
+
+        
+            var html_148c57de43f74e4eaf88435d4cd0da10 = $(`<div id="html_148c57de43f74e4eaf88435d4cd0da10" style="width: 100.0%; height: 100.0%;">Orroral Road<br> More information at www.environment.act.gov.au/parks-conservation/parks-and-reserves/find-a-park/namadgi-national-park/namadgi-national-park</div>`)[0];
+            popup_56fd59685a52493d81d8566bf9d24f1a.setContent(html_148c57de43f74e4eaf88435d4cd0da10);
+        
+
+        marker_bcecabb2dcfa4d9d9031bdb4701833e8.bindPopup(popup_56fd59685a52493d81d8566bf9d24f1a)
+        ;
+
+        
+    
+    
+            var marker_ca66d7c81148490ab6917070d21ad249 = L.marker(
+                [-35.47438454743737, 148.769479605686],
+                {}
+            ).addTo(feature_group_6b441a3ff9bd49c384cda4d1337b673c);
+        
+    
+            var icon_c53c80c8c4de46868e92208c914c12f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_ca66d7c81148490ab6917070d21ad249.setIcon(icon_c53c80c8c4de46868e92208c914c12f7);
+        
+    
+        var popup_d76b9a6f1fe04b5d85e6ad76278ea2ce = L.popup({"maxWidth": 400, "minWidth": 200});
+
+        
+            var html_71b2d3b680eb44e3bf599b25dc73efee = $(`<div id="html_71b2d3b680eb44e3bf599b25dc73efee" style="width: 100.0%; height: 100.0%;">Mt Franklin Road is closed at Aggi Gate.<br> More information at www.environment.act.gov.au/parks-conservation/parks-and-reserves/find-a-park/namadgi-national-park/namadgi-national-park</div>`)[0];
+            popup_d76b9a6f1fe04b5d85e6ad76278ea2ce.setContent(html_71b2d3b680eb44e3bf599b25dc73efee);
+        
+
+        marker_ca66d7c81148490ab6917070d21ad249.bindPopup(popup_d76b9a6f1fe04b5d85e6ad76278ea2ce)
+        ;
+
+        
+    
+    
+            var marker_0156d6466b6844d4a8bc64975b397784 = L.marker(
+                [-35.31449384199871, 148.9492328367995],
+                {}
+            ).addTo(feature_group_6b441a3ff9bd49c384cda4d1337b673c);
+        
+    
+            var icon_67be159b029a441dbefb6b460df6599e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_0156d6466b6844d4a8bc64975b397784.setIcon(icon_67be159b029a441dbefb6b460df6599e);
+        
+    
+        var popup_1454a3ffcaa4405c8bdc181315b199c5 = L.popup({"maxWidth": 400, "minWidth": 200});
+
+        
+            var html_935b073e75354d6b82e3620e97a3361d = $(`<div id="html_935b073e75354d6b82e3620e97a3361d" style="width: 100.0%; height: 100.0%;">Brindabella Road - 4WD access ONLY due to inclement weather conditions.</div>`)[0];
+            popup_1454a3ffcaa4405c8bdc181315b199c5.setContent(html_935b073e75354d6b82e3620e97a3361d);
+        
+
+        marker_0156d6466b6844d4a8bc64975b397784.bindPopup(popup_1454a3ffcaa4405c8bdc181315b199c5)
+        ;
+
+        
+    
+    
+            var marker_264badf2a12d4b42bdd95ef9f1883485 = L.marker(
+                [-35.582811843884535, 149.1092660710479],
+                {}
+            ).addTo(feature_group_6b441a3ff9bd49c384cda4d1337b673c);
+        
+    
+            var icon_40868ccb0b954a5b86d8a0eeca92c8b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_264badf2a12d4b42bdd95ef9f1883485.setIcon(icon_40868ccb0b954a5b86d8a0eeca92c8b2);
+        
+    
+        var popup_bdad67061120474780159043d260a745 = L.popup({"maxWidth": 400, "minWidth": 200});
+
+        
+            var html_054a964d85c148f99aa456742d37c56d = $(`<div id="html_054a964d85c148f99aa456742d37c56d" style="width: 100.0%; height: 100.0%;">Angle Crossing Road is closed in both directions.</div>`)[0];
+            popup_bdad67061120474780159043d260a745.setContent(html_054a964d85c148f99aa456742d37c56d);
+        
+
+        marker_264badf2a12d4b42bdd95ef9f1883485.bindPopup(popup_bdad67061120474780159043d260a745)
+        ;
+
+        
+    
+    
+            var marker_83ecb7890c12489b8f4dbaa2aae2f47a = L.marker(
+                [-35.73725852010708, 148.99644301735606],
+                {}
+            ).addTo(feature_group_6b441a3ff9bd49c384cda4d1337b673c);
+        
+    
+            var icon_114016e896a443b0854d01638567f890 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_83ecb7890c12489b8f4dbaa2aae2f47a.setIcon(icon_114016e896a443b0854d01638567f890);
+        
+    
+        var popup_b9c9cdf3416f4e709ed7cff87236291b = L.popup({"maxWidth": 400, "minWidth": 200});
+
+        
+            var html_22ec13c80db547b990b03b230dbe2456 = $(`<div id="html_22ec13c80db547b990b03b230dbe2456" style="width: 100.0%; height: 100.0%;">Old Boboyan Road is closed at the intersection with Boboyan Road.<br> More information at: https://www.environment.act.gov.au/parks-conservation/parks-and-reserves/find-a-park/namadgi-national-park/namadgi-national-park</div>`)[0];
+            popup_b9c9cdf3416f4e709ed7cff87236291b.setContent(html_22ec13c80db547b990b03b230dbe2456);
+        
+
+        marker_83ecb7890c12489b8f4dbaa2aae2f47a.bindPopup(popup_b9c9cdf3416f4e709ed7cff87236291b)
+        ;
+
+        
+    
+    
+            var marker_453be619c77644e0868cd44fe49e6b03 = L.marker(
+                [-35.45193954893502, 149.07374350769396],
+                {}
+            ).addTo(feature_group_6b441a3ff9bd49c384cda4d1337b673c);
+        
+    
+            var icon_e7fa5cd5493a4bdd95bf2b4cf69b90ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_453be619c77644e0868cd44fe49e6b03.setIcon(icon_e7fa5cd5493a4bdd95bf2b4cf69b90ee);
+        
+    
+        var popup_082396adc8f948d78e612e75d22131f4 = L.popup({"maxWidth": 400, "minWidth": 200});
+
+        
+            var html_1da2a16bcefa4fc4b6062fd0a2bf3325 = $(`<div id="html_1da2a16bcefa4fc4b6062fd0a2bf3325" style="width: 100.0%; height: 100.0%;">Point Hut Crossing is closed.</div>`)[0];
+            popup_082396adc8f948d78e612e75d22131f4.setContent(html_1da2a16bcefa4fc4b6062fd0a2bf3325);
+        
+
+        marker_453be619c77644e0868cd44fe49e6b03.bindPopup(popup_082396adc8f948d78e612e75d22131f4)
+        ;
+
+        
+    
+    
+            var marker_fb5c01b2ffe24145bb2fbd7335024c01 = L.marker(
+                [-35.45637495604175, 149.07737509770195],
+                {}
+            ).addTo(feature_group_6b441a3ff9bd49c384cda4d1337b673c);
+        
+    
+            var icon_7269fa4796824fa5b80266824e52bda9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_fb5c01b2ffe24145bb2fbd7335024c01.setIcon(icon_7269fa4796824fa5b80266824e52bda9);
+        
+    
+        var popup_0175d47ea0d846c3b491f996d1e59c59 = L.popup({"maxWidth": 400, "minWidth": 200});
+
+        
+            var html_75fe4af9f4bf403f97be0b8140552cb7 = $(`<div id="html_75fe4af9f4bf403f97be0b8140552cb7" style="width: 100.0%; height: 100.0%;">POINT HUT ROAD - both directions</div>`)[0];
+            popup_0175d47ea0d846c3b491f996d1e59c59.setContent(html_75fe4af9f4bf403f97be0b8140552cb7);
+        
+
+        marker_fb5c01b2ffe24145bb2fbd7335024c01.bindPopup(popup_0175d47ea0d846c3b491f996d1e59c59)
+        ;
+
+        
+    
+    
+            var marker_5cc40e77ab3e4724be817745f00b770a = L.marker(
+                [-35.22131828145708, 149.14534209312683],
+                {}
+            ).addTo(feature_group_6b441a3ff9bd49c384cda4d1337b673c);
+        
+    
+            var icon_1fc43318bba5493891f7fdcd3db206f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "warning-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_5cc40e77ab3e4724be817745f00b770a.setIcon(icon_1fc43318bba5493891f7fdcd3db206f8);
+        
+    
+        var popup_689b4e100874422aa55175c2508b262a = L.popup({"maxWidth": 400, "minWidth": 200});
+
+        
+            var html_0c21d0a64423489a990bec7bdb2854b2 = $(`<div id="html_0c21d0a64423489a990bec7bdb2854b2" style="width: 100.0%; height: 100.0%;">MORISSET ROAD - both directions from FLEMINGTON RD to OLD WELLS STATION RD</div>`)[0];
+            popup_689b4e100874422aa55175c2508b262a.setContent(html_0c21d0a64423489a990bec7bdb2854b2);
+        
+
+        marker_5cc40e77ab3e4724be817745f00b770a.bindPopup(popup_689b4e100874422aa55175c2508b262a)
+        ;
+
+        
+    
+    
+            var layer_control_59cd1571a45045838fe6ec90263a6324 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_6b6b7ee8256d45cebce32ec2be6b4efa,
+                },
+                overlays :  {
+                    "Fire" : feature_group_347fe4c072d844ea825c06e2feefc4bd,
+                    "Trafic" : feature_group_6b441a3ff9bd49c384cda4d1337b673c,
+                },
+            };
+            L.control.layers(
+                layer_control_59cd1571a45045838fe6ec90263a6324.base_layers,
+                layer_control_59cd1571a45045838fe6ec90263a6324.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_cd02375bc158421a9d947a5b35005ae8);
+        
+</script>

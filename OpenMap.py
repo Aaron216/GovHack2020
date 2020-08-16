@@ -72,4 +72,4 @@ for item in response.json()['features']:
 mapData.add_child(trafficData)
 
 folium.LayerControl().add_to(mapData)
-mapData.save('index.html')
+mapData.save('MapElement.html')
